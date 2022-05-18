@@ -1,8 +1,16 @@
-import Head from 'next/head'
-import Navbar from "../Navbar";
-import styles from './MainLayout.module.css'
+import { FC } from 'react';
 
-const MainLayout = ({ children }) => {
+import Head from 'next/head';
+
+import Navbar from "../Navbar";
+import styles from './MainLayout.module.css';
+
+//se puede importar PropsWithChildren desde react y pasar las props vacias o con algo
+interface DarkLayoutProps {
+    children: JSX.Element;
+}
+
+const MainLayout: FC<DarkLayoutProps> = ({ children }) => {
     return (
         <div className={styles.container}>
             <Head>

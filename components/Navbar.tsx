@@ -1,5 +1,5 @@
 
-import Link from 'next/link'
+
 import ActiveLink from './ActiveLink'
 import styles from './Navbar.module.css'
 

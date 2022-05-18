@@ -1,5 +1,12 @@
+import React, { FC } from "react";
 
-const DarkLayout = ({ children }) => {
+//se puede importar PropsWithChildren desde react y pasar las props vacias o con algo
+interface DarkLayoutProps {
+    children: JSX.Element;
+}
+
+
+const DarkLayout: FC<DarkLayoutProps> = ({ children }) => {
     return (
         <div style={{
             backgroundColor: 'rgba(0, 0, 0, 0.3)',
