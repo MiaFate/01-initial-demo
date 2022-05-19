@@ -5,6 +5,7 @@ import MainLayout from '../components/layouts/MainLayout'
 export default function Home() {
   return (
     <MainLayout>
+
       <h1>Home Page</h1>
       <h1 className={'title'}>
         {/* Ir a <a href="/about">About</a> */}
@@ -17,6 +18,7 @@ export default function Home() {
         Get started by editing{''}
         <code className={'code'}>pages/index.js</code>
       </p>
+
     </MainLayout>
   )
 }

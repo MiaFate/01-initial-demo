@@ -1,8 +1,8 @@
-import React, { FC } from "react";
+import React, { FC, ReactElement, ReactNode } from "react";
 
 //se puede importar PropsWithChildren desde react y pasar las props vacias o con algo
 interface DarkLayoutProps {
-    children: JSX.Element;
+    children: JSX.Element | JSX.Element[];
 }
 
 

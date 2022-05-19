@@ -7,7 +7,7 @@ import styles from './MainLayout.module.css';
 
 //se puede importar PropsWithChildren desde react y pasar las props vacias o con algo
 interface DarkLayoutProps {
-    children: JSX.Element;
+    children: JSX.Element | JSX.Element[];
 }
 
 const MainLayout: FC<DarkLayoutProps> = ({ children }) => {
